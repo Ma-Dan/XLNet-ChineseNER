@@ -82,6 +82,8 @@ class XLNetDataUtils(object):
     def add_one_sentence(self, ntokens, target):
         tag_ids = self.convert_tag(target)
         text = ''.join(ntokens)
+        text.replace('…', '.')
+        text.replace('℃', 'C')
         text_preprocessed = preprocess_text(text)
         inputs_ids = encode_ids(self.sp_model, text_preprocessed)
         segment_ids = [0] * len(inputs_ids)

@@ -362,6 +362,8 @@ class Model():
             tf.assign(self.best_dev_f1, f1).eval()
 
     def prepare_xlnet_pred_data(self, text):
+        text.replace('…', '.')
+        text.replace('℃', 'C')
         text_preprocessed = preprocess_text(text)
         input_ids = encode_ids(self.sp_model, text_preprocessed)
         input_mask = [1] * len(input_ids)
