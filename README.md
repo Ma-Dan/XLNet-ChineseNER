@@ -4,10 +4,15 @@
 
 CMU XLNet
 
-参考: https://github.com/yanwii/ChineseNER
-      https://github.com/macanv/BERT-BiLSTM-CRF-NER
-      https://github.com/zihangdai/xlnet
-      https://github.com/ymcui/Chinese-PreTrained-XLNet
+参考资料: 
+
+https://github.com/yanwii/ChineseNER
+
+https://github.com/macanv/BERT-BiLSTM-CRF-NER
+      
+https://github.com/zihangdai/xlnet
+      
+https://github.com/ymcui/Chinese-PreTrained-XLNet
 
 # 下载xlnet中文预训练模型
     参考 https://github.com/ymcui/Chinese-PreTrained-XLNet
